@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible Panels Example</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Add your preferred styling here */
+.collapsible-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.collapsible-panel {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.collapsible-header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.collapsible-content {
+    display: none;
+    padding: 10px;
+}
+
+.collapsible-content a {
+    display: block;
+    margin-bottom: 5px;
+}
+    </style>
+</head>
+<body>
+
+<div class="collapsible-container">
+    <!-- Category 1 -->
+    <div class="collapsible-panel">
+        <div class="collapsible-header">Category 1</div>
+        <div class="collapsible-content">
+            <!-- Documents for Category 1 -->
+            <a href="#">Document 1.1</a>
+            <a href="#">Document 1.2</a>
+            <!-- Add more document links as needed -->
+        </div>
+    </div>
+
+    <!-- Category 2 -->
+    <div class="collapsible-panel">
+        <div class="collapsible-header">Category 2</div>
+        <div class="collapsible-content">
+            <!-- Documents for Category 2 -->
+            <a href="#">Document 2.1</a>
+            <a href="#">Document 2.2</a>
+            <!-- Add more document links as needed -->
+        </div>
+    </div>
+
+    <!-- Add more collapsible panels for other categories -->
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

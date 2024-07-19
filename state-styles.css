@@ -1,0 +1,280 @@
+/*State Page Stylings*/
+#mtState {
+    position: absolute;
+    width: 100%;
+    margin-top: -20px;
+    margin-left: -160px;
+    transform: rotate(-7deg);
+    z-index: 0;
+}
+
+.announcement-box {
+    position: absolute;
+    width: 60%;
+    height: 120px;
+    margin-top: 100px;
+    margin-left: 500px;
+    border: 1px solid #000000;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+}
+
+.announcement-box p {
+    font-size: 17px;
+    margin: 0 0 0px 0;
+    top: 10px;
+}
+
+.collapsible-container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 230px;
+  margin-left: 50px;
+}
+  
+.collapsible-button {
+    background-color: #F9FAFB;
+    width: 15em;
+    height: 50px;
+    margin: 50px 15px 0 15px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    white-space: nowrap;
+    overflow: hidden; /* Hide the a elements by default */
+    transition: height 75.5s ease; /* Animate the height */
+    transition: ease-in-out 0.2s;
+    z-index: 1;
+}
+
+.collapsible-button:hover {
+    color: white;
+    background-color: #818CF8;
+    transition: ease-in-out 0.2s;
+}
+
+.header-text {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+  
+.collapsible-button.expanded {
+    background-color: #d1d1d1;
+    width: 26em;
+    height: auto;
+    margin: 0px 15px 0 15px;
+    padding: 0px -50px 10px -50px;
+    cursor: pointer;
+    border-radius: 20px;
+    user-select: none;
+    display: flex; /* Make this a flex container */
+    flex-direction: column; /* Align items along the column direction */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Align items to the start of the container */
+    align-content: start;
+}
+
+.collapsible-button.expanded:hover {
+    color: black;
+    background-color: #d1d1d1;
+    transition: ease-in-out 0.2s;
+}
+
+.collapsible-button.expanded .header-text {
+    border-bottom: 2.5px solid black;
+    width: 97%;
+    margin: 0px 0 6px 0;
+}
+
+.collapsible-button a {
+    display: none; /* Hide the a elements by default */
+}
+  
+.collapsible-button.expanded a {
+    display: flex; /* Show the a elements when the panel is expanded */;
+    width: 42%;
+    margin: 0 auto 5px auto;
+    border-radius: 8px;
+}
+  
+.link-button {
+  color: black;
+  text-decoration: none;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 5px 120px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.link-button:hover {
+  color: white;
+  background-color: #818CF8;
+}
+
+
+
+#dsLogo {
+    position: absolute;
+    top: 100px;
+    margin-left: 20px;
+    mix-blend-mode: multiply;
+}
+
+#aForms.expanded {
+    width: 42em;
+    height: auto;
+    margin: 0 15px 0 30px;
+    padding: 10px -50px 10px -50px;
+    cursor: pointer;
+    border-radius: 20px;
+    user-select: none;
+    display: flex; /* Make this a flex container */
+    flex-direction: column; /* Align items along the column direction */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Align items to the start of the container */
+    align-content: start;
+
+}
+
+#aForms a {
+    width: 29em;
+}
+
+#tas.expanded {
+    width: 18em;
+    height: auto;
+    margin: 0 15px 0 50px;
+    padding: 10px -50px 10px -50px;
+    cursor: pointer;
+    border-radius: 20px;
+    user-select: none;
+    display: flex; /* Make this a flex container */
+    flex-direction: column; /* Align items along the column direction */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Align items to the start of the container */
+    align-content: start;
+
+}
+
+#tas a {
+    width: 3em;
+}
+
+#tase.expanded {
+    width: 27em;
+    height: auto;
+    margin: 0 15px 0 50px;
+    padding: 10px -50px 10px -50px;
+    cursor: pointer;
+    border-radius: 20px;
+    user-select: none;
+    display: flex; /* Make this a flex container */
+    flex-direction: column; /* Align items along the column direction */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Align items to the start of the container */
+    align-content: start;
+}
+
+#am.expanded {
+    width: 33em;
+    margin: 10px 15px -20 0px;
+    padding: 10px -50px 10px 50px;
+    cursor: pointer;
+    border-radius: 20px;
+    user-select: none;
+    display: flex; /* Make this a flex container */
+    flex-direction: column; /* Align items along the column direction */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Align items to the start of the container */
+    max-height: 550px;
+    overflow-y: scroll;
+}
+
+#am.expanded .header-text {
+    margin-top: 185px;
+}
+
+#am a {
+    width: 19em;
+}
+
+#am.expanded span::after {
+    content: "▼";
+    margin: 0 5px; /* adjust as needed */
+}
+
+/* Webkit Scrollbar Stuff */
+#am.expanded::-webkit-scrollbar {
+    width: 10px;
+}
+
+#am.expanded::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#am.expanded::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+#am.expanded::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+#nz.expanded {
+    width: 33em;
+    margin: 10px 15px -20 0px;
+    padding: 10px -50px 10px 50px;
+    cursor: pointer;
+    border-radius: 20px;
+    user-select: none;
+    display: flex; /* Make this a flex container */
+    flex-direction: column; /* Align items along the column direction */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Align items to the start of the container */
+    max-height: 600px;
+    overflow-y: scroll;
+}
+
+#nz a {
+    width: 19em;
+}
+
+#nz.expanded span::after {
+    content: "▼";
+    margin: 0 5px; /* adjust as needed */
+}
+
+/* Webkit Scrollbar Stuff */
+#nz.expanded::-webkit-scrollbar {
+    width: 10px;
+}
+
+#nz.expanded::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#nz.expanded::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+#nz.expanded::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
